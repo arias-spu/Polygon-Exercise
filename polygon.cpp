@@ -19,6 +19,8 @@ Polygon::Polygon(const Polygon& other)
 Polygon::~Polygon()
 {
 }
+bool Polygon::AddCorner(const Point& corner){
+}
 Polygon& Polygon::operator=(const Polygon& rhs){
 }
 string Polygon::ToString()const{

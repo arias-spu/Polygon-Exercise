@@ -12,10 +12,12 @@ using std::string;
 class Polygon{
 	Point* _points;
 	size_t _sides;
+	size_t _addedPoints;
 public:
 	Polygon(size_t);
 	Polygon(const Polygon&);
 	~Polygon();
+	bool AddCorner(const Point&);
 	Polygon& operator=(const Polygon&);
 	string ToString()const;
 	double Area()const;
